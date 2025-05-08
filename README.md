@@ -1,8 +1,7 @@
-# 22PT08-Katomaran-Hackathon-May-2025
+# FaceTrace
 
-A sophisticated face recognition platform that enables local, privacy-focused multi-face detection, real-time identification, and AI-powered conversational interactions. This application was developed for the Katomaran Hackathon (May 2025).
+A sophisticated face recognition platform that enables local, privacy-focused multi-face detection, real-time identification, and AI-powered conversational interactions.
 
-This project is a part of a hackathon run by https://katomaran.com
 ---
 
 ## 🌟 Key Features
@@ -16,24 +15,24 @@ This project is a part of a hackathon run by https://katomaran.com
 
 ---
 
-## 📸 Screenshots
-
-### Registration Tab
-![Registration Tab](assets/registration_tab.png)
-
-### Recognition Tab
-![Recognition Tab](assets/recognition_tab.png)
-
-### AI Chat Tab
-![AI Chat Tab](assets/ai_chat_tab.png)
-
----
-
 ## 🎥 Demo Video
 
 Watch the demo video to see the platform in action:
 
-[![Watch the video](assets/video_thumbnail.png)](assets/demo_video.mp4)
+[![Watch the video](attached_assets/video_thumbnail.png)](attached_assets/demo_video.mp4)
+
+---
+
+## 📸 Screenshots
+
+### Registration Tab
+![Registration Tab](attached_assets/Registerface_UI.png)
+
+### Recognition Tab
+![Recognition Tab](attached_assets/Recognizeface_UI.png)
+
+### AI Chat Tab
+![AI Chat Tab](attached-assets/ChatAI_UI.png)
 
 ---
 
@@ -51,8 +50,8 @@ Watch the demo video to see the platform in action:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/lakshmanpanda/22PT08-Katomaran-Hackathon-May-2025.git
-cd 22PT08-Katomaran-Hackathon-May-2025
+git clone https://github.com/lakshmanpanda/FaceTrace.git
+cd FaceTrace
 ```
 
 ### 2. Install Backend Dependencies
@@ -180,9 +179,3 @@ Then access your application at the URL provided by localtunnel.
 Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit pull requests.
 
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
