@@ -32,7 +32,7 @@ Watch the demo video to see the platform in action:
 ![Recognition Tab](attached_assets/Recognizeface_UI.png)
 
 ### AI Chat Tab
-![AI Chat Tab](attached-assets/ChatAI_UI.png)
+![AI Chat Tab](attached_assets/ChatAI_UI.png)
 
 ---
 
