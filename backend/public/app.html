@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="app" class="app-container">
+        <header>
+            <h1>Face Recognition Platform</h1>
+            <p>Katomaran Hackathon Edition - May 2025</p>
+        </header>
+        
+        <div class="tab-container">
+            <button class="tab active" data-tab="registration">
+                <i class="fas fa-user-plus"></i> Registration
+            </button>
+            <button class="tab" data-tab="recognition">
+                <i class="fas fa-camera"></i> Live Recognition
+            </button>
+            <button class="tab" data-tab="chat">
+                <i class="fas fa-comment-dots"></i> AI Chat
+            </button>
+        </div>
+        
+        <div class="content">
+            <!-- Registration Tab -->
+            <div id="registration" class="tab-content active">
+                <h2>Face Registration</h2>
+                <p class="instructions">
+                    Capture your face from the webcam and register it with a name.
+                </p>
+                
+                <div class="webcam-container">
+                    <video id="registration-video" class="webcam-video" autoplay playsinline></video>
+                    <canvas id="registration-canvas" class="face-canvas" style="display: none;"></canvas>
+                </div>
+                
+                <div class="captured-image-container" style="display: none;">
+                    <h3>Captured Image</h3>
+                    <img id="captured-image" class="captured-image" alt="Captured face">
+                    <button id="recapture-btn" class="btn btn-secondary">Recapture</button>
+                </div>
+                
+                <div id="registration-message" class="message" style="display: none;"></div>
+                
+                <div class="registration-form">
+                    <div class="form-group">
+                        <label for="person-name">Person's Name:</label>
+                        <input type="text" id="person-name" placeholder="Enter name" disabled>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button id="capture-btn" class="btn">
+                            <i class="fas fa-camera"></i> Capture
+                        </button>
+                        <button id="register-btn" class="btn" disabled>Register Face</button>
+                        <button id="reset-btn" class="btn btn-danger">Reset</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recognition Tab -->
+            <div id="recognition" class="tab-content">
+                <h2>Live Face Recognition</h2>
+                <p class="instructions">
+                    The system will automatically detect and recognize faces in the video feed.
+                </p>
+                
+                <div class="control-buttons">
+                    <button id="toggle-recognition-btn" class="btn">
+                        <i class="fas fa-play"></i> Start Recognition
+                    </button>
+                </div>
+                
+                <div class="webcam-container">
+                    <video id="recognition-video" class="webcam-video" autoplay playsinline></video>
+                    <canvas id="recognition-canvas" class="face-canvas"></canvas>
+                </div>
+                
+                <div class="recognized-faces">
+                    <h3>Recognized Faces</h3>
+                    <ul id="faces-list" class="faces-list">
+                        <li class="face-item">No faces currently recognized</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Chat Tab -->
+            <div id="chat" class="tab-content">
+                <h2>AI Assistant Chat</h2>
+                <p class="instructions">
+                    Ask questions about face registration activities using natural language.
+                </p>
+                
+                <div class="chat-container">
+                    <div id="chat-messages" class="chat-messages">
+                        <div class="message bot">
+                            Hello! I can answer questions about face registration activities. For example, try asking: "Who was the last person registered?" or "How many people are currently registered?"
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <input type="text" id="chat-input" class="chat-input" placeholder="Ask something about face registration...">
+                        <button id="chat-send-btn" class="chat-send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>

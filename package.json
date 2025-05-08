@@ -1,0 +1,18 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "This project is a browser-based platform that enables users to register their faces and recognize them in real-time using laptop camera streams. The platform supports facial recognition, multi-face detection, and includes a chat interface powered by RAG to answer queries related to face registration activities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "localtunnel": "^2.0.2",
+    "pg": "^8.15.6",
+    "ws": "^8.18.2"
+  }
+}

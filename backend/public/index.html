@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .app-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #e9ecef;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .tab.active {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .instructions {
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+        
+        .features {
+            margin-top: 30px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .feature i {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #007bff;
+        }
+        
+        .feature-content {
+            flex: 1;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #0069d9;
+        }
+        
+        @media (max-width: 768px) {
+            .tab-container {
+                flex-direction: column;
+            }
+            
+            .tab {
+                margin: 5px 0;
+            }
+            
+            .feature {
+                flex-direction: column;
+            }
+            
+            .feature i {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Face Recognition Platform</h1>
+            <p>Katomaran Hackathon Edition - May 2025</p>
+        </header>
+        
+        <div class="content">
+            <div class="container">
+                <h2>Welcome to the Face Recognition Platform</h2>
+                <p class="instructions">
+                    This platform allows you to register faces, perform real-time recognition, and query information about registered individuals.
+                    All processing is done locally without requiring external API keys or services.
+                </p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-user-plus"></i>
+                        <div class="feature-content">
+                            <h3>Face Registration</h3>
+                            <p>Capture and store faces with associated names in the database.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-camera"></i>
+                        <div class="feature-content">
+                            <h3>Live Recognition</h3>
+                            <p>Real-time recognition with bounding boxes, name display, and confidence scores.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <div class="feature-content">
+                            <h3>Multi-face Detection</h3>
+                            <p>Recognize multiple faces simultaneously in a single frame.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-comment-dots"></i>
+                        <div class="feature-content">
+                            <h3>AI Chat Interface</h3>
+                            <p>Ask questions about registrations in natural language and get instant answers.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <p>The application is running and ready to use.</p>
+                    <p>Backend Server Status: <span style="color: green; font-weight: bold;">ONLINE</span></p>
+                    <a href="/app" class="btn">Launch Application</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
